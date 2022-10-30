@@ -12,7 +12,7 @@
                         <h2 class="text-2xl font-semibold text-center text-gray-700 dark:text-white">
                             <img src="{{ asset("assets/img/mi_Mascota.png") }}" alt="Mi mascota mimada" class="mx-auto img-fluid img-logo" style="margin:-80px;"/>
                         </h2>
-                        <h4>Gracias por tu compra</h4>
+                        <h4>¡Gracias por tu compra!</h4>
                         @if (session('message'))
                             <input type="hidden" value="{{ session('message') }}" id="ref">
                             <h4>La referencia del pedido es: {{ session('message') }}</h4>
