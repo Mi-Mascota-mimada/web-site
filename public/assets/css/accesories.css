@@ -1,0 +1,6 @@
+.lSAction > a{
+    background-image: url('../img/controls.png');
+}
+i.fa-solid.fa-dog{
+    transform: scaleX(-1);
+}

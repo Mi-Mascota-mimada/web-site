@@ -1,0 +1,26 @@
+/*Brands main*/
+.brand-icon{
+    color: #417F7C;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 30px;
+}
+.brand-main b{
+    margin-left: 1px;
+    font-size: 18px;
+}
+.brands{
+    background-color: #fcfcfc;
+    padding: 5px;
+}
+.brand-col{
+    border-left: 1px dotted #555353;
+    border-right: 1px dotted #555353;
+}
+.brand-img{
+    width: 130px;
+    transition: .5s ease-in;
+}
+.brand-img:hover{
+    transform: scale(1.2);
+}
+/* /Brands main*/

@@ -1,0 +1,81 @@
+@import url(sliders.css); /*Sliders*/
+@import url(navbar.css); /*Navbar*/
+@import url(category.css); /*Category*/
+@import url(productCard.css); /*Product Card*/
+@import url(color.css); /*Color*/
+@import url(productView.css); /*Color*/
+@import url(brandsMain.css); /*Brands*/
+@import url(topButton.css); /*Top Button*/
+@import url(floating-wpp.css); /*Whatsapp Button*/
+@import url(rate.css); /*rate*/
+@import url(main-title.css); /*main Title*/
+@import url(responsive-navbar.css); /*Responsive Navbar*/
+@import url(wishlistCart.css); /*Wishlist OR Cart*/
+@import url(info.css); /*Info*/
+@import url(main-responsive.css); /*main-responsive*/
+@import url(gallery.css); /*gallery*/
+@import url(accesories.css); /*main-services*/
+@import url(checkout.css); /*checkout*/
+@import url(banner_category.css); /*banner category*/
+@import url(mimado_coins.css); /*Mimado coins*/
+@import url(coins.css); /*Coins spinning*/
+@import url(profile.css); /*profile*/
+@import url(cart-dropdown.css); /*Cart-dropdown*/
+@import url(modal-sale.css); /*Modal sale*/
+@import url(cookies.css); /*Modal sale*/
+*{
+    font-family: 'Lato', sans-serif;   
+    scroll-behavior: smooth; 
+}
+.img-logo{
+    width: 240px;
+    height: 240px;
+    margin: -45px;
+}
+.section-product{
+    background: #fcfcfc;
+}
+main{
+    background: #fcfcfc;
+}
+.swal2-popup.swal2-modal.swal2-show{
+    font-size: 9px;
+}
+.payment-card{
+    font-size: 40px;
+}
+span.span-google{
+    background: url('../img/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+.btn-google{
+    border: 1px solid #c3c3c3;
+}
+
+
+
+/* efect waves button whatsapp and top*/
+@keyframes waves{
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+/*efect title*/
+@keyframes comein{
+    0%{
+        color: #fcfcfc;
+        margin-bottom: -35px;
+    }
+    30%{
+        letter-spacing: 10px;
+        margin-bottom: -35px;
+    }
+    85%{
+        letter-spacing: 1px;
+        margin-bottom: -35px;
+    }
+}

@@ -1,0 +1,95 @@
+.inner-width{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+    background: #fcfcfc;
+}
+li.myli {
+    list-style: none;
+}
+ul.myul{
+    width:350px
+}
+.logo-responsive{
+    float: left;
+    padding: 20px 0;
+}
+.navigation-menu{
+    display: flex;
+    align-items: center;
+    min-height: 25px;
+    
+}
+.navigation-menu a{
+    margin-left: 10px;
+    color: #111827;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: .3s linear;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.navigation-menu a:hover{
+    background: #1F2937;
+    color: #fcfcfc;
+    transform: scale(1.1);
+}
+.menu-toggle-btn{
+    float: right;
+    height: 70px;
+    line-height: 65px !important;
+    color: #111827;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .modal-sale{
+        width: 500px;
+        height: 400px;
+    }
+    .inner-width{
+        background: #fcfcfc;
+        height: 70px;
+    }
+    .menu-toggle-btn{
+        display: block !important;
+    }
+    .navigation-menu{
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #fcfcfc;
+        top: 190px;
+        right: 9px;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+    .navigation-menu::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fcfcfc;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+    .navigation-menu a{
+        display: block;
+        margin: 10px 0;
+    }
+    .navigation-menu.active{
+        display: block;
+    }
+    .myul a{
+        font-size:10px ;
+        padding: 1px;        
+    }
+    .myul img{
+        width: 25px !important;
+        height: 25px !important;
+    }
+    
+}

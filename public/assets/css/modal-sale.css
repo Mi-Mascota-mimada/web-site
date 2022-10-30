@@ -1,0 +1,58 @@
+.modal-sale-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.modal-sale-main{
+    height: 0;
+}
+.show-modal{
+    display: flex;
+}
+.hide-modal{
+    display: none;
+}
+.modal-sale{
+    /*background-image: url('../img/404-page.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    width: 900px;
+    height: 500px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+.modal-close{
+    font-size: 20px;
+    color: #757373;
+    cursor: pointer;
+    float: right;
+    transition: .5s ease all;
+}
+.modal-close:hover{
+    scale: 1.3;
+    rotate: 30deg;
+    color: #000;
+}
+@media screen and (max-width:768px) {
+    .modal-sale{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media (min-width:769px) and (max-width: 950px) {
+    .modal-sale{
+        width: 800px;
+        height: 450px;
+    }
+}

@@ -1,0 +1,32 @@
+.coin{
+    background: #e6d700; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8a7c04, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f7606, #f9d423); 
+    height: 55px;
+    width: 120px;  
+    border-radius: 5px;
+}
+.mimado-coins-div{
+    padding: 3px;    
+    text-align: center;   
+    background:url('../img/brillo.png') no-repeat;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.mimado-coins{
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;    
+    font-weight: 600;
+}
+@keyframes example {
+    0%   {
+        background-position: -300px 0px;
+    }
+    50%  {
+        background-position: 300px 0px;
+    }
+    100% {
+        background-position: -300px 0px;
+    }
+}

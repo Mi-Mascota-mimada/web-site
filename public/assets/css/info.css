@@ -1,0 +1,20 @@
+
+.info-div{
+    background: #fcfcfc !important;
+    width: 200px;
+    padding: 5px;
+    border-left: 1px dotted #8d8c8c;
+    border-right: 1px dotted #8d8c8c;
+    align-items: flex-start;
+}
+.info-span{
+   
+    font-size: 18px;
+    font-weight: 600;
+    color:  #8d8c8c;
+}
+.info-i{
+    font-size: 20px;
+    font-weight: 600;
+    color:  #8d8c8c;
+}

@@ -1,0 +1,35 @@
+#form-rate {
+    width: 450px;
+    margin: 0 auto;
+  }
+  
+  #form-rate p {
+    text-align: center;
+  }
+  
+  #form-rate label {
+    font-size: 40px;
+  }
+  
+  #form-rate input[type="radio"] {
+    display: none;
+  }
+  
+  .label-rate {
+    color: grey;
+    cursor: pointer;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  .label-rate:hover,
+  .label-rate:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ .label-rate {
+    color: orange;
+  }

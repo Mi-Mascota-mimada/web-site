@@ -1,0 +1,45 @@
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #37a3fe;
+    top: -150px;
+    left: 45px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .6s ease-out;
+}
+
+.gotopbtn.active{
+    top: calc(100% - 60px);
+    opacity: 1;
+}
+
+.gotopbtn:hover{
+    background-color: #27aa60;
+}
+
+.gotopbtn::before,
+.gotopbtn::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #37a3fe;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    animation: waves 2s linear infinite;
+}
+
+.gotopbtn::after{
+    animation-delay: 1s;
+}
+
+.gotopbtn:hover::before,
+.gotopbtn:hover::after{
+    border-color: #27aa60;
+}
