@@ -11,7 +11,11 @@
                     </div>
                     <div class="card-body mx-auto">
                         @if ($user['picture'] != "")
-                            <img src="{{ Storage::url($user['picture']) }}" alt="{{$user['name']}}"  class="profile-picture img-thumbnail"/>
+                            @if ($user['external_auth'] === 'google')
+                                <img src="{{ url($user['picture']) }}" alt="{{$user['name']}}"  class="profile-picture img-thumbnail"/>
+                            @else                                
+                                <img src="{{ Storage::url($user['picture']) }}" alt="{{$user['name']}}"  class="profile-picture img-thumbnail"/>
+                            @endif
                         @else
                             <img class="profile-picture img-thumbnail" src="{{asset('assets/img/imagen_no_encontrada.jpg')}}" alt="{{$user['name']}}">
                         @endif                        

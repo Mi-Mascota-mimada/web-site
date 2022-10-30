@@ -46,7 +46,12 @@
                                 </td>
                                 <td>
                                     @if ($userItem->picture != "")
-                                        <img src="{{ Storage::url($userItem->picture) }}" alt="{{$userItem->name}}"  class="profile-picture img-thumbnail"/>
+                                        @if ($userItem->external_auth === 'google')
+                                            <img src="{{ url($userItem->picture) }}" alt="{{$userItem->name}}"  class="profile-picture img-thumbnail"/>
+                                        @else                                
+                                            <img src="{{ Storage::url($userItem->picture) }}" alt="{{$userItem->name}}"  class="profile-picture img-thumbnail"/>
+                                        @endif
+                                        
                                     @else
                                         <img class="profile-picture img-thumbnail" src="{{asset('assets/img/imagen_no_encontrada.jpg')}}" alt="{{$userItem->name}}">
                                     @endif     

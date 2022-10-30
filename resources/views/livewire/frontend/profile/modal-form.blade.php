@@ -29,8 +29,12 @@
                         <input type="file" wire:model.defer="picture" class="form-control" />
                         @if ($this->pictureBack !== $this->picture)
                             <img src="{{ $this->picture->temporaryUrl() }}" alt="{{ $this->name }}" class="img-fluid" style="width: 70px; height:70px;">
-                        @else
-                            <img src="{{ Storage::url($this->picture) }}" alt="{{ $this->name }}" class="img-fluid" style="width: 70px; height:70px;">
+                        @else                            
+                            @if (str_contains($this->picture, 'google'))
+                            <img src="{{ url($this->picture) }}" alt="{{ $this->name }}" class="img-fluid" style="width: 70px; height:70px;">
+                            @else
+                                <img src="{{ Storage::url($this->picture) }}" alt="{{ $this->name }}" class="img-fluid" style="width: 70px; height:70px;">   
+                            @endif
                         @endif
                         </td>
                         @error('picture') <small class="text-danger"> {{ $message }} </small> @enderror
